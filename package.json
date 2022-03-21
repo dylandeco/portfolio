@@ -1,7 +1,6 @@
 {
   "private": true,
   "name": "portfolio",
-  "homepage": "http://dylandeco.github.io/portfolio",
   "version": "1.0.0",
   "scripts": {
     "build": "react-scripts build",
