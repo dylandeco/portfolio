@@ -10,12 +10,12 @@ import { style } from "glamor";
 function Projects(props) {
   const theme = props.theme;
 
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
+  // const styles = style({
+  //   backgroundColor: `${theme.accentBright}`,
+  //   ":hover": {
+  //     boxShadow: `0 5px 15px ${theme.accentBright}`,
+  //   },
+  // });
 
   return (
     <div className="projects-main">
@@ -48,18 +48,6 @@ function Projects(props) {
           return <ProjectCard repo={repo} theme={theme} />;
         })}
       </div>
-      <br />
-      <br />
-      <br />
-      <a
-        {...styles}
-        className="general-btn"
-        href="https://github.com/harikanani"
-      >
-        More Projects (Github)
-      </a>
-      <br />
-      <br />
     </div>
   );
 }
