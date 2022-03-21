@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Home from "../pages/home/HomeComponent";
 import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
@@ -9,7 +9,7 @@ import Projects from "../pages/projects/Projects";
 export default function Main(propss) {
   return (
     <div>
-      <HashRouter basename="/">
+      <BrowserRouter basename="/">
         <Switch>
           <Route
             path="/"
@@ -74,7 +74,7 @@ export default function Main(propss) {
             )}
           />
         </Switch>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
