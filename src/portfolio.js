@@ -174,7 +174,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects make use of a vast variety of latest technology tools. My best experience is to create NodeJS Backend Projects, Python Scripts, and React Project. Below are some of my projects. Note that not all of the mentioned projects are on GitHub yet.",
+    "This is a showcase of both projects I have completed at work and projects that I have completed for school or as side projects",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -196,7 +196,46 @@ const contactPageData = {
 };
 
 const projects = {
-  data: [],
+  data: [
+    {
+      id: "0",
+      name: "AutomateInstaPyBot",
+      url: "https://github.com/harikanani/AutomateInstaPyBot",
+      description:
+        "This is Instagram Bot. This will login to your Instagram account. Follow Users, Unfollow Users, Remove Profile Photo",
+      languages: [
+        {
+          name: "Python",
+          iconifyClass: "logos-python",
+        },
+      ],
+    },
+    {
+      id: "1",
+      name: "react-twitter-clone",
+      url: "https://github.com/harikanani/react-twitter-clone",
+      description:
+        "A React Twitter Clone UI with basic functionality such as make a Tweet.Embedded Profile Tweets and Share on Twitter.",
+      languages: [
+        {
+          name: "HTML5",
+          iconifyClass: "vscode-icons:file-type-html",
+        },
+        {
+          name: "CSS3",
+          iconifyClass: "vscode-icons:file-type-css",
+        },
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Firebase",
+          iconifyClass: "logos-firebase",
+        },
+      ],
+    },
+  ],
 };
 
 export {

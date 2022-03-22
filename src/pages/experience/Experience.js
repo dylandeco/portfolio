@@ -8,7 +8,8 @@ import ExperienceImg from "./ExperienceImg";
 
 function Experience(props) {
   const theme = props.theme;
-  console.log(props.setTheme);
+  console.log(experience["sections"][0]);
+
   return (
     <div className="experience-main">
       <Header theme={theme} setTheme={props.setTheme} />
@@ -32,7 +33,7 @@ function Experience(props) {
                 {experience["description"]}
               </p>
               <ExperienceAccordion
-                sections={experience["sections"]}
+                sections={experience["sections"][0]}
                 theme={theme}
               />
             </div>

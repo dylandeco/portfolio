@@ -34,7 +34,8 @@
 
 .experience-card-company {
   font-family: "Google Sans Regular";
-  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 10px;
   text-align: left;
 }
 
@@ -117,9 +118,6 @@
     width: 100px;
   }
 
-  .experience-card-body-div {
-  }
-
   .experience-card-heading-left {
     float: center;
     margin-left: auto;
@@ -138,6 +136,7 @@
 
   .experience-card-company {
     text-align: center;
+    margin: 0px;
   }
 
   .experience-card-duration {
