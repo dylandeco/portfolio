@@ -199,14 +199,30 @@ const projects = {
   data: [
     {
       id: "0",
-      name: "AutomateInstaPyBot",
+      name: "NewConnection",
       url: "https://github.com/harikanani/AutomateInstaPyBot",
       description:
-        "This is Instagram Bot. This will login to your Instagram account. Follow Users, Unfollow Users, Remove Profile Photo",
+        "NewConnection is a distributed social media site. This was done for my university capstone project.",
       languages: [
+        {
+          name: "React",
+          iconifyClass: "logos-react",
+        },
+        {
+          name: "Material-UI",
+          iconifyClass: "logos:material-ui",
+        },
         {
           name: "Python",
           iconifyClass: "logos-python",
+        },
+        {
+          name: "Django",
+          iconifyClass: "logos:django-icon",
+        },
+        {
+          name: "Heroku",
+          iconifyClass: "logos:heroku-icon",
         },
       ],
     },

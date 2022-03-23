@@ -3,13 +3,9 @@ import ProjectLanguages from "../projectLanguages/ProjectLanguages";
 import "./ProjectCard.css";
 import { Fade } from "react-reveal";
 import { style } from "glamor";
+import { Link } from "react-router-dom";
 
-export default function ProjectCard({ repo, theme }) {
-  function openRepoinNewTab(url) {
-    var win = window.open(url, "_blank");
-    win.focus();
-  }
-
+export default function ProjectCard({ project, theme }) {
   const styles = style({
     color: "rgb(88, 96, 105)",
     backgroundColor: "rgb(255, 255, 255)",
@@ -25,27 +21,26 @@ export default function ProjectCard({ repo, theme }) {
   });
 
   return (
-    <div>
+    <Link to={"project/" + project.name} style={{ textDecoration: "none" }}>
       <Fade bottom duration={2000} distance="40px">
         <div
           {...styles}
-          key={repo.id}
-          onClick={() => openRepoinNewTab(repo.url)}
+          key={project.id}
           style={{ backgroundColor: theme.projectCard }}
         >
           <div className="repo-name-div">
             <p className="repo-name" style={{ color: theme.text }}>
-              {repo.name}
+              {project.name}
             </p>
           </div>
           <p className="repo-description" style={{ color: theme.text }}>
-            {repo.description}
+            {project.description}
           </p>
           <div className="repo-details">
-            <ProjectLanguages logos={repo.languages} />
+            <ProjectLanguages logos={project.languages} />
           </div>
         </div>
       </Fade>
-    </div>
+    </Link>
   );
 }

@@ -5,6 +5,7 @@ import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import Project from "../pages/project/Project";
 
 export default function Main(propss) {
   return (
@@ -67,6 +68,16 @@ export default function Main(propss) {
             path="/projects"
             render={(props) => (
               <Projects
+                {...props}
+                theme={propss.theme}
+                setTheme={propss.setTheme}
+              />
+            )}
+          />
+          <Route
+            path="/project/:projectName"
+            render={(props) => (
+              <Project
                 {...props}
                 theme={propss.theme}
                 setTheme={propss.setTheme}

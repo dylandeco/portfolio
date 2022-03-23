@@ -1,0 +1,48 @@
+.project-main {
+  width: 100%;
+  text-align: center;
+}
+
+.project-title-text {
+  margin-top: 40px;
+  font-size: 60px;
+  line-height: 5px;
+  font-family: "Google Sans Bold";
+}
+
+.project-cards-div-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem 1rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
+
+.video-responsive {
+  display: flex;
+  justify-content: center;
+}
+
+.video-responsive iframe {
+  margin-top: 20px;
+  height: 65vh;
+  width: 65%;
+}
+
+@media (max-width: 875px) {
+  .project-main {
+    display: block;
+  }
+  .project-title-text {
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 5px;
+    font-family: "Google Sans Bold";
+  }
+
+  .video-responsive iframe {
+    height: 50vh;
+    width: 85%;
+  }
+}
