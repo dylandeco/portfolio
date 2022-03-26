@@ -23,6 +23,9 @@ function Contact(props) {
       <div className="basic-contact">
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">
+            <div className="blog-heading-img-div">
+              <BlogsImg theme={theme} />
+            </div>
             <div className="contact-heading-text-div">
               <h1
                 className="contact-heading-text"
@@ -41,11 +44,6 @@ function Contact(props) {
                 See my resume
               </Link>
             </div>
-          </div>
-        </Fade>
-        <Fade bottom duration={1000} distance="40px">
-          <div className="blog-heading-img-div">
-            <BlogsImg theme={theme} />
           </div>
         </Fade>
       </div>

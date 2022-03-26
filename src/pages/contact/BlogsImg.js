@@ -7,8 +7,8 @@ export default function BlogsImg(props) {
       id="b4ce20e6-8fe7-43d5-87f7-68602c562594"
       data-name="Layer 1"
       xmlns="http://www.w3.org/2000/svg"
-      width="1061"
-      height="742.85506"
+      width="700"
+      height="550"
       viewBox="0 0 1061 742.85506"
     >
       <title></title>
