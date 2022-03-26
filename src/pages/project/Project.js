@@ -1,11 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../components/header/Header";
+import ImageCard from "../../components/ImageCard/ImageCard";
 import "./Project.css";
-import { projects } from "../../portfolio.js";
 
 function Project(props) {
   let params = useParams();
+  console.log(props.location.state);
   return (
     <div className="project-main">
       <Header theme={props.theme} setTheme={props.setTheme} />
@@ -14,7 +15,7 @@ function Project(props) {
           <h1 className="project-title-text">{params.projectName}</h1>
           <div className="video-responsive">
             <iframe
-              src="https://www.youtube.com/watch?v=A2qfGmmDIdY"
+              src="https://www.youtube.com/embed/vxiC2ZZK03w"
               frameborder="0"
               allow="autoplay; encrypted-media"
               allowfullscreen
@@ -26,11 +27,11 @@ function Project(props) {
         <>
           <h1 className="project-title-text">{params.projectName}</h1>
           <div className="project-cards-div-main">
-            {projects.data.map((repo) => {
+            {props.location.state.project.images.map((image, index) => {
               return (
-                <img
-                  src={require(`../../assests/images/ProjectTracker/TaskTwo.jpg`)}
-                  alt=""
+                <ImageCard
+                  key={index}
+                  link={require(`../../assests/images${image}`)}
                 />
               );
             })}

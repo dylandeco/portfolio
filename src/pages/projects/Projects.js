@@ -8,7 +8,6 @@ import ProjectsImg from "./ProjectsImg";
 
 function Projects(props) {
   const theme = props.theme;
-
   return (
     <div className="projects-main">
       <Header theme={theme} setTheme={props.setTheme} />
@@ -37,7 +36,9 @@ function Projects(props) {
       </div>
       <div className="repo-cards-div-main">
         {projects.data.map((project) => {
-          return <ProjectCard project={project} theme={theme} />;
+          return (
+            <ProjectCard key={project.id} project={project} theme={theme} />
+          );
         })}
       </div>
     </div>

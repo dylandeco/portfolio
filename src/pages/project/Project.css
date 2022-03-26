@@ -11,9 +11,10 @@
 }
 
 .project-cards-div-main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 1rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 60px;

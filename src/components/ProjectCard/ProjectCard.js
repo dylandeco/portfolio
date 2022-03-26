@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function ProjectCard({ project, theme }) {
   const styles = style({
     color: "rgb(88, 96, 105)",
-    backgroundColor: "rgb(255, 255, 255)",
+    backgroundColor: "#167742eb",
     boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
     padding: "2rem",
     cursor: "pointer",
@@ -19,15 +19,13 @@ export default function ProjectCard({ project, theme }) {
       boxShadow: `${theme.imageDark} 0 2px 15px`,
     },
   });
-
   return (
-    <Link to={"project/" + project.name} style={{ textDecoration: "none" }}>
+    <Link
+      to={{ pathname: "project/" + project.name, state: { project } }}
+      style={{ textDecoration: "none" }}
+    >
       <Fade bottom duration={2000} distance="40px">
-        <div
-          {...styles}
-          key={project.id}
-          style={{ backgroundColor: theme.projectCard }}
-        >
+        <div {...styles} key={project.id}>
           <div className="repo-name-div">
             <p className="repo-name" style={{ color: theme.text }}>
               {project.name}

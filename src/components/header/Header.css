@@ -182,8 +182,6 @@
   color: #ffffff !important;
 }
 
-/* 48em = 768px */
-
 @media (min-width: 875px) {
   .header li {
     float: left;

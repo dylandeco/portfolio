@@ -200,7 +200,6 @@ const projects = {
     {
       id: "0",
       name: "NewConnection",
-      url: "https://github.com/harikanani/AutomateInstaPyBot",
       description:
         "NewConnection is a distributed social media site. This was done for my university capstone project.",
       languages: [
@@ -228,10 +227,9 @@ const projects = {
     },
     {
       id: "1",
-      name: "react-twitter-clone",
-      url: "https://github.com/harikanani/react-twitter-clone",
+      name: "ProjectTracker",
       description:
-        "A React Twitter Clone UI with basic functionality such as make a Tweet.Embedded Profile Tweets and Share on Twitter.",
+        "A project management app used for keeping track of tasks and work done on projects.",
       languages: [
         {
           name: "HTML5",
@@ -242,13 +240,24 @@ const projects = {
           iconifyClass: "vscode-icons:file-type-css",
         },
         {
-          name: "React",
-          iconifyClass: "logos-react",
+          name: "JavaScript",
+          iconifyClass: "logos:javascript",
         },
         {
-          name: "Firebase",
-          iconifyClass: "logos-firebase",
+          name: "PHP",
+          iconifyClass: "logos:php",
         },
+      ],
+      images: [
+        "/ProjectTracker/HomeScreen.jpg",
+        "/ProjectTracker/Drawer.jpg",
+        "/ProjectTracker/Portfolio.jpg",
+        "/ProjectTracker/Portfolios.jpg",
+        "/ProjectTracker/Project.jpg",
+        "/ProjectTracker/ProjectActivity.jpg",
+        "/ProjectTracker/TaskTwo.jpg",
+        "/ProjectTracker/YourProfile.jpg",
+        "/ProjectTracker/YourProfileTasks.jpg",
       ],
     },
   ],

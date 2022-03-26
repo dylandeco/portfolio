@@ -2,8 +2,8 @@
 
 const lightTheme = {
   name: "light",
-  body: "#FFFFFF",
-  text: "#343434",
+  body: "#1D1D1D",
+  text: "#FFFFFF",
   dark: "#000000",
   secondaryText: "#7F8DAA",
   accentColor: "#167742",
