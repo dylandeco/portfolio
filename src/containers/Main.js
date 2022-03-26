@@ -6,6 +6,7 @@ import Experience from "../pages/experience/Experience";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
 import Project from "../pages/project/Project";
+import Resume from "../pages/resume/Resume";
 
 export default function Main(propss) {
   return (
@@ -78,6 +79,16 @@ export default function Main(propss) {
             path="/project/:projectName"
             render={(props) => (
               <Project
+                {...props}
+                theme={propss.theme}
+                setTheme={propss.setTheme}
+              />
+            )}
+          />
+          <Route
+            path="/resume"
+            render={(props) => (
+              <Resume
                 {...props}
                 theme={propss.theme}
                 setTheme={propss.setTheme}

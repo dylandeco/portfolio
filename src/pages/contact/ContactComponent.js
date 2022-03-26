@@ -4,10 +4,8 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import BlogsImg from "./BlogsImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
 import { style } from "glamor";
-
-const ContactData = contactPageData.contactSection;
+import { Link } from "react-router-dom";
 
 function Contact(props) {
   const theme = props.theme;
@@ -30,20 +28,18 @@ function Contact(props) {
                 className="contact-heading-text"
                 style={{ color: theme.text }}
               >
-                {ContactData["title"]}
+                Contact Me
               </h1>
-              <p
-                className="contact-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {ContactData["description"]}
-              </p>
               <SocialMedia />
               <br />
               <br />
-              <a {...styles} className="general-btn" href={greeting.resumeLink}>
-                See my Resume
-              </a>
+              <Link
+                to={{ pathname: "/resume" }}
+                className={"general-btn"}
+                {...styles}
+              >
+                See my resume
+              </Link>
             </div>
           </div>
         </Fade>
