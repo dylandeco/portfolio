@@ -9,6 +9,7 @@
 
 .experience-heading-div {
   display: flex;
+  align-items: center;
 }
 
 .experience-heading-div > * {
@@ -64,7 +65,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1920px) {
   .experience-heading-text {
     font-size: 30px;
     margin-top: 20px;
