@@ -14,6 +14,9 @@ export default function ProjectCard({ project, theme }) {
     cursor: "pointer",
     borderRadius: "5px",
     height: "100%",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
     transition: "all 0.2s ease-in-out",
     ":hover": {
       boxShadow: `${theme.imageDark} 0 2px 15px`,
@@ -24,7 +27,7 @@ export default function ProjectCard({ project, theme }) {
       to={{ pathname: "project/" + project.name, state: { project } }}
       style={{ textDecoration: "none" }}
     >
-      <Fade bottom duration={2000} distance="40px">
+      <Fade left duration={1000}>
         <div {...styles} key={project.id}>
           <div className="repo-name-div">
             <p className="repo-name" style={{ color: theme.text }}>
@@ -35,7 +38,24 @@ export default function ProjectCard({ project, theme }) {
             {project.description}
           </p>
           <div className="repo-details">
-            <ProjectLanguages logos={project.languages} />
+            <ProjectLanguages
+              logos={project.languages}
+              github={project.github}
+            />
+            {project.github && (
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <span
+                  className="iconify github-icon"
+                  data-icon={"logos:github-icon"}
+                  data-inline="false"
+                ></span>
+              </a>
+            )}
           </div>
         </div>
       </Fade>
