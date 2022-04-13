@@ -111,7 +111,7 @@ const degrees = {
       subtitle: "Bachelor of Science in Computing Science",
       logo_path: "UofA.png",
       alt_name: "UofA",
-      duration: "2017 - 2022",
+      duration: "2017 - 2021",
       descriptions: [
         "• Web Applications and Architecture",
         "• Software Engineering",
