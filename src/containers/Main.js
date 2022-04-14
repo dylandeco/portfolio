@@ -66,9 +66,9 @@ export default function Main(propss) {
             )}
           />
           <Route
-            path="/projects"
+            path="/projects/:projectName"
             render={(props) => (
-              <Projects
+              <Project
                 {...props}
                 theme={propss.theme}
                 setTheme={propss.setTheme}
@@ -76,9 +76,10 @@ export default function Main(propss) {
             )}
           />
           <Route
-            path="/project/:projectName"
+            exact
+            path="/projects"
             render={(props) => (
-              <Project
+              <Projects
                 {...props}
                 theme={propss.theme}
                 setTheme={propss.setTheme}

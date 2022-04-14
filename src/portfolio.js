@@ -142,7 +142,7 @@ const experience = {
           location: "Remote",
           description: [
             "• Developed a project-tracking tool for management and staff for local projects",
-            "• Optimized a 4-dimensional weather data app, decreasing load times by threefold",
+            "• Optimized a 4-dimensional weather data app, decreasing load times by 300%",
             "• Created a web-based tool to manage backups of MySQL databases using PHP",
             "• Implemented new methodologies and tools for analyzing climate data",
             "• Mentored interns and served as a first point of contact for questions",

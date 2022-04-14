@@ -24,14 +24,23 @@ export default function ProjectCard({ project, theme }) {
   });
   return (
     <Link
-      to={{ pathname: "project/" + project.name, state: { project } }}
+      to={{ pathname: "projects/" + project.name, state: { project } }}
       style={{ textDecoration: "none" }}
     >
       <Fade left duration={1000}>
         <div {...styles} key={project.id}>
-          <div className="repo-name-div">
+          <div
+            className="repo-name-div"
+            style={{ display: "flex", justifyContent: "space-between" }}
+          >
             <p className="repo-name" style={{ color: theme.text }}>
               {project.name}
+            </p>
+            <p
+              className="repo-name"
+              style={{ color: theme.text, fontSize: "16px" }}
+            >
+              View Project
             </p>
           </div>
           <p className="repo-description" style={{ color: theme.text }}>
