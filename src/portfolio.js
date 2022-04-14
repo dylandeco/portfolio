@@ -138,7 +138,7 @@ const experience = {
           company: "Environment Canada",
           company_url: "",
           logo_path: "UofA.png",
-          duration: "May 2021 - Present",
+          duration: "May 2021 - Dec 2021",
           location: "Remote",
           description: [
             "• Developed a project-tracking tool for management and staff for local projects",
