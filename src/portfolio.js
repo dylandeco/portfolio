@@ -134,7 +134,7 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
-          title: "Software Developer (Intern)",
+          title: "Full Stack Developer (Intern)",
           company: "Environment Canada",
           company_url: "",
           logo_path: "UofA.png",
@@ -150,7 +150,7 @@ const experience = {
           color: "#0071C5",
         },
         {
-          title: "Software Developer (Intern)",
+          title: "Full Stack Developer (Intern)",
           company: "Environment Canada",
           company_url: "",
           logo_path: "UofA.png",
